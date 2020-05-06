@@ -1,0 +1,25 @@
+// navigation
+
+.navbar {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: $lightblue;
+    box-shadow: 5px 10px $shadowblue;
+    margin: 0 auto;
+    li {
+      text-align: center;
+    }
+    
+    li a {
+      display: block;
+      color: $white;
+      text-align: center;
+      padding: 22px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: $lightblue;
+    }
+  }

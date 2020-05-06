@@ -1,0 +1,44 @@
+.search-fligh-list{
+    margin:0 auto;
+    width: 85%;
+    border: 2px solid  $lightblue;
+    padding: 20px;
+    box-shadow: 5px 10px $shadowblue;
+    margin-top: 50px;
+    @include tablet {
+      width: 74%;
+    }
+    @include desktop {
+      width: 34%;
+    }
+    .sort{
+      color: $lightblue;
+      float: right;
+      font-size: 12px;
+      text-decoration: underline;
+      margin-top: 5px;
+      cursor: pointer;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  
+    .list-flights{
+      border-top: 1px solid  $lightblue;
+    }
+  
+    h3{
+      padding-bottom: 10px;
+    }
+  
+    ul {
+      margin-left: -40px;
+      li{
+        list-style: none;
+        display: block;
+        background-color:$shadowblue;
+        padding: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
