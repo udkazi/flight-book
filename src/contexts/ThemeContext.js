@@ -59,6 +59,8 @@ class ThemeContextProvider extends Component {
 
     searchResult =(e) =>{
         let setArray = [];
+        this.setState({listFlight:this.state.flights});
+        console.log(this.state.flights,"this.state.flights")
 
         for(let i=0; i<this.state.flights.length; i++){ 
             if(this.state.flights[i].departure===this.state.Departure 
@@ -66,7 +68,7 @@ class ThemeContextProvider extends Component {
                 && this.state.flights[i].date===this.state.searchDate ){
                 setArray.push(this.state.flights[i]);
                 console.log(setArray);
-                this.setState({listFlight:setArray});
+                this.setState({listFlight:this.state.flights});
             }
         }
         this.props.history.push("/search");
